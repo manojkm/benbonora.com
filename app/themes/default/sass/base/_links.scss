@@ -1,0 +1,17 @@
+/* Links
+========================================================================== */
+ .inline-block-link {
+  display: inline-block;
+  margin-right: $padding;
+ }
+
+ .inherit-link {
+  color: inherit;
+ }
+
+ %link--plain, .link--plain{
+  text-decoration: none;
+  &:focus, &:hover{
+    text-decoration: underline;
+  }
+ }

@@ -1,0 +1,43 @@
+{
+  "name": "benbonora",
+  "version": "1.0.0",
+  "homepage": "http://www.benbonora.com",
+  "description": "Ben Bonora's personal site.",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "assemble": "^0.9.0",
+    "bower": "^1.7.1",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.1",
+    "grunt-notify": "^0.4.3",
+    "grunt-rev": "^0.1.0",
+    "grunt-sass": "^1.1.0",
+    "grunt-sass-globbing": "^1.4.0",
+    "grunt-shell": "^1.1.2",
+    "load-grunt-config": "^0.19.1",
+    "load-grunt-tasks": "^3.4.0",
+    "node-sass": "^3.4.2",
+    "time-grunt": "^1.3.0",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Ben Bonora",
+    "email": "ben.bonora@outlook.com",
+    "url": "http://www.benbonora.com"
+  }
+}

@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.container{
+  @include container;
+}
+
+.container--grid{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include breakpoint-min($mobile){
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .no-flexbox &{
+    @inclue float-clear;
+  }
+}
+
+.page{
+  height: 100%;
+  .expanded &{
+    overflow: hidden;
+    @include breakpoint-min($tablet){
+      overflow: initial;
+    }
+
+  }
+}
+//Special Pages
+.page--home{
+}
+.page--popup{
+}
+
+.page--body{
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: z-index 0ms ease-in 550ms;
+  }
+  .expanded &{
+    & *{
+      z-index: 0 !important;
+    }
+    & .loading--circle{
+      z-index: -2 !important;
+    }
+    &:before{
+      z-index: 4;
+      opacity: 1;
+      background-color: $bg--page-body--expanded;
+      transition: opacity 550ms $cubic-ease;
+      @include breakpoint-min($tablet){
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+  }
+  a{
+    color: $text--link;
+    background-color: transparent;
+    word-break: break-word;
+    &:hover, &:focus{
+      color: $text--link--hover;
+    }
+  }
+}
+
+.body--inner{
+  @include container;
+  background-color: $bg--page-body;
+  //make body width smaller if fullpage ad exists
+  .has-fullpage-ad &{
+    @include breakpoint-min($desktop){
+      max-width: ($desktop);
+    }
+  }
+}
+
+.main--left,
+.sidebar--right{
+  width: 100%;
+  display: block;
+  padding: $padding-half 0;
+  @include breakpoint-min($tablet){
+    display: inline-block;
+    position: relative;
+    padding: 0;
+  }
+}
+
+.content--main{
+  @include float-clear;
+}
+
+.main--left{
+  position: relative;
+  @include breakpoint-min($tablet){
+    width: percentage(2/3);
+    float: left;
+    padding-right: $padding;
+    .page--home &{
+      padding-right: 0;
+    }
+  }
+}
+
+.sidebar--right{
+  width: 100%;
+  display: block;
+  z-index: 1;
+    @include breakpoint-min-max($mobile, $tablet){
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  @include breakpoint-min($tablet){
+    width: percentage(1/3);
+    float: right;
+  }
+  &:after{
+    content: '';
+    display: block;
+    clear: right;
+  }
+  .page--home &{
+    @include breakpoint-min($tablet){
+      padding-left: $padding;
+    }
+  }
+}
+
+.sidebar__item{
+  width: 100%;
+  display: block;
+  padding-bottom: $padding;
+  @include breakpoint-min-max($mobile, $tablet){
+    width: 48%;
+    display: inline-block;
+  }
+}
+
+.sidebar-item__title{
+  @extend .heading--top;
+}
+
+.main--full{
+  width: 100%;
+  display: block;
+}
+
+.home--full{
+  position: relative;
+  z-index: 0;
+  margin: 0 -2px;
+}

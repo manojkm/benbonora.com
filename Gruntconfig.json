@@ -1,0 +1,10 @@
+{
+  "app": "app",
+  "dist": "dist",
+  "grunt": {
+    "files": [
+      "grunt/config/**/*.js",
+      "grunt/tasks/**/*.js"
+    ]
+  }
+}

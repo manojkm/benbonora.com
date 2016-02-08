@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Base Navigation Styles for Main Menu/Secondary/Tertiary Nav
+   ========================================================================== */
+
+%nav--base{
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  //Drupal Override
+  ul li{
+    &.expanded, &.collapsed, &.leaf{
+      list-style: none;
+    }
+  }
+}

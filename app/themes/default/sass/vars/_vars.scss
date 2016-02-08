@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Base Variables
+   ========================================================================== */
+
+/**** Sizes ****/
+
+/* Base */
+$base-unit: 16;
+$base-unit-px: $base-unit + 'px';
+$line-height: 1.6;
+$line-height-sm: 1.2;
+
+$max-width: 1200px;
+$grid-spacing: $base-unit-px;
+
+$padding-base: $base-unit;
+$padding: $padding-base * 1px;
+$padding-double: $padding * 2;
+$padding-triple: $padding * 3;
+$padding-half:  $padding / 2;
+$padding-quarter: $padding / 4;
+$padding-eighth: $padding / 8;
+$padding-container: $padding * 3;
+
+/* Breakpoints */
+$desktop-xl: 1200px;
+$desktop-lg: 1120px;
+$desktop: 1020px;
+$desktop-sm: 920px;
+$tablet-lg: 850px;
+$tablet: 720px;
+$mobile: 620px;
+$mobile-sm: 580px;
+
+/* Heading Sizes */
+$h1: 2 * $base-unit; //32px
+$h2: 1.5 * $base-unit; //24px
+$h3: 1.17 * $base-unit; //18.72px
+$h4: 1 * $base-unit; //16px
+$h5: 0.83 * $base-unit; //13.28px
+$h6: 0.67 * $base-unit; //10.72px
+
+
+/* Object-Specific Sizes */
+$header-mobile-height: $padding * 3;
+
+$font-primary: 'Roboto Condensed', sans-serif !default;
+$font-secondary: 'Open Sans', Helvetica, sans-serif !default;
+$font-tertiary: 'Francois One', sans-serif !default;
+$font-quaternary: 'Enriqueta', serif !default;
+
+/**** Animation *****/
+$cubic-ease: cubic-bezier(0.22, 0.61, 0.18, 0.7);
+
+
+
+

@@ -1,0 +1,107 @@
+/* Forms
+========================================================================== */
+/**
+ * Inherit font color for placeholder text
+ *
+ */
+ ::-webkit-input-placeholder {
+   color: inherit;
+ }
+
+ :-moz-placeholder { /* Firefox 18- */
+   color: inherit;
+ }
+
+ ::-moz-placeholder {  /* Firefox 19+ */
+   color: inherit;
+ }
+
+ :-ms-input-placeholder {
+   color: inherit;
+ }
+
+input,
+textarea,
+select{
+  border-radius: $padding-quarter;
+  border: 1px solid $border--form-input;
+  padding: $padding-quarter;
+}
+
+fieldset {
+  border: 1px solid $border--fieldset;
+  margin: $padding-half 0;
+  padding: $padding;
+}
+
+.form--hidden{
+  visibility: hidden;
+  @include visually-hidden;
+}
+
+.form__entry{
+  display: block;
+  width: 100%;
+  padding: $padding-half 0;
+  &.entry--half{
+    @include breakpoint-min($tablet){
+      width: 50%;
+      float: left;
+      display: inline-block;
+      &:nth-of-type(2n){
+        clear: right;
+        padding-left: $padding-half;
+      }
+    }
+  }
+  .form--hidden &{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+
+.entry__input, .entry__label, label{
+  width: 100%;
+  display: block;
+  .entry--radio &, .entry--checkbox &{
+    display: inline;
+    width: auto;
+  }
+  .form--inline &{
+    display: inline;
+    width: auto;
+  }
+}
+
+.entry__label, label{
+  padding: 0 0 $padding-quarter 0;
+  .entry--radio &, .entry--checkbox &{
+    padding: 0 0 0 $padding-quarter;
+  }
+}
+
+.entry__input{
+  max-width: 400px;
+}
+
+.entry__submit, .entry__reset{
+  @include float-clear;
+}
+
+.entry__submit{
+  @extend .button--primary;
+  margin-right: $padding-half;
+}
+
+.entry__reset{
+  @extend .button--secondary;
+}
+
+//Drupal-generated Classes
+.form-submit{
+  @extend .button--primary;
+}
+
+
