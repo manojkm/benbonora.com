@@ -15,30 +15,6 @@ module.exports = function (grunt) {
     _.extend(config, customConfigOverrides);
   }
 
-  var output = [];
-  var themes = grunt.file.expand(
-      {
-        filter: 'isDirectory',
-        cwd:  config.app + '/themes',
-      },['*']);
-
-  var sass_dirs = themes.map(function(theme, index){
-
-    var tmp = grunt.file.expand(
-    {
-      filter: 'isDirectory',
-      cwd: config.app + '/themes/' + theme + '/sass'
-    },['*','!map','!vars']);
-
-    tmp.forEach(function(item,index){
-      console.log(index);
-      output[index] = 'test - ' + item ;
-    });
-    return output;
-  });
-
-  console.log(sass_dirs);
-
   grunt.loadNpmTasks('grunt-notify');
 
   grunt.initConfig({
