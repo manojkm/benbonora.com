@@ -8,3 +8,122 @@ $pinterest-red: #cb2027;
 $vimeo-green: #aad450;
 $vine-green: #00bf8f;
 $snapchat-yellow: #fffc00;
+
+/* Blues */
+$blue: #0090C5;
+$blue-light: #03B8FF;
+$lochmara-blue: #2e6ca2; //AA compliant for white
+$regal-blue: #1a3c5a; //AA compliant for white
+$boston-blue: #428bca;
+$spindle-blue: #bfe3f0;
+
+
+/* Neutrals (Black/Grays/White) */
+$black: #000000;
+$charcoal: #595959;
+$gray: #E0E0E0;
+$gray-dark: #cccccc;
+$gray-light: #FBFBFE;
+$mine-shaft: #222;
+$mine-shaft-light: #313131;
+$dusty-gray: #999;
+$silver: #AEAEAE;
+$white: #FFFFFF;
+
+$gray--base: #999;
+
+/* Reds */
+$red--bg-alert: #db1111;
+
+/* Greens */
+$green: #8CC940;
+$green-light: #ACE567;
+$fern: #5cb85c;
+$laurel-green: #3a853a; //AA compliant for white text
+
+/* Transparent */
+$transparent: rgba(0,0,0,0);
+
+/**** Grouped Variables ****/
+
+/* Primary Color + Variations */
+$color--primary: $gray--base;
+$color--primary--light--1x: lighten($color--primary, 7%) !default;
+$color--primary--light--2x: lighten($color--primary, 14%) !default;
+$color--primary--light--3x: lighten($color--primary, 21%) !default;
+$color--primary--light--4x: lighten($color--primary, 28%) !default;
+$color--primary--dark--1x: darken($color--primary, 7%) !default;
+$color--primary--dark--2x: darken($color--primary, 14%) !default;
+$color--primary--dark--3x: darken($color--primary, 21%) !default;
+$color--primary--dark--4x: darken($color--primary, 28%) !default;
+
+/* Secondary Colors + Variations */
+$color--secondary: $laurel-green;
+$color--secondary--light--1x: lighten($color--secondary, 7%) !default;
+$color--secondary--light--2x: lighten($color--secondary, 14%) !default;
+$color--secondary--light--3x: lighten($color--secondary, 21%) !default;
+$color--secondary--light--4x: lighten($color--secondary, 28%) !default;
+$color--secondary--dark--1x: darken($color--secondary, 7%) !default;
+$color--secondary--dark--2x: darken($color--secondary, 14%) !default;
+$color--secondary--dark--3x: darken($color--secondary, 21%) !default;
+$color--secondary--dark--4x: darken($color--secondary, 28%) !default;
+
+/* Neutral Colors + Variations */
+$color--neutral: $gray--base;
+$color--neutral--light--1x: lighten($gray--base, 7%);
+$color--neutral--light--2x: lighten($gray--base, 14%);
+$color--neutral--light--3x: lighten($gray--base, 21%);
+$color--neutral--light--4x: lighten($gray--base, 28%);
+$color--neutral--light--5x: lighten($gray--base, 35%);
+$color--neutral--dark--1x: darken($gray--base, 7%);
+$color--neutral--dark--2x: darken($gray--base, 14%);
+$color--neutral--dark--3x: darken($gray--base, 21%);
+$color--neutral--dark--4x: darken($gray--base, 28%);
+$color--neutral--dark--5x: darken($gray--base, 35%);
+
+/* Overrides */
+$color--neutral--light--5x: darken($white, 3%);
+
+/* Global Objects */
+$bg--dark: $black;
+$bg--light: $white;
+$text--base: $black;
+$text--light: $white;
+$text--dark: $color--neutral--dark--4x;
+
+/**** Base ****/
+/* Global */
+$bg--blockquote: $color--neutral--light--3x;
+$border--blockquote: $color--neutral--light--1x;
+$text--blockquote: $color--neutral--dark--4x;
+$text--heading-sub: $color--neutral--dark--4x;
+
+
+/* Layout */
+$bg--page-body: $bg--light;
+$bg--page-body--expanded: rgba($bg--dark, 0.7);
+
+/* Animations */
+$bg--loading-animation-bar: $color--primary--light--2x;
+$bg--loading-circle: rgba($bg--dark, 0.7);
+$bg--loading-animation-circle: $color--primary--light--2x;
+
+/* Backgrounds */
+$bg--gradient-primary: $bg--dark;
+$bg--semitransparent-primary: rgba($bg--dark, 0.8);
+
+/* Buttons */
+$text--button-primary: $color--neutral--light--4x;
+$bg--button-primary: $color--primary;
+$bg--button-primary--hover: $color--primary--dark--1x;
+$text--button-secondary: $text--light;
+$bg--button-secondary: $color--neutral--dark--3x;
+$bg--button-secondary--hover: $color--neutral--dark--4x;
+
+/* Forms */
+$border--form-input: $color--neutral;
+$border--fieldset: $color--neutral;
+
+/* Links */
+$text--link: $color--primary;
+$text--link--hover: $color--secondary;

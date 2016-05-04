@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Base Navigation Styles for Main Menu/Secondary/Tertiary Nav
+   Base Navigation Styles
    ========================================================================== */
 
 %nav--base{
@@ -9,10 +9,16 @@
   a{
     text-decoration: none;
   }
-  //Drupal Override
-  ul li{
-    &.expanded, &.collapsed, &.leaf{
-      list-style: none;
-    }
-  }
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item-link {
+
 }

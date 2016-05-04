@@ -18,10 +18,10 @@ module.exports = {
     },
     force: true,
   },
-  dev: {
-    src: ['<%= config.jsDir %>/*.js']
+  app: {
+    src: ['app/themes/**/js/*.js']
   },
-  gruntfiles: {
+  grunt: {
     src: ['Gruntfile.js','grunt/**/*.js']
   }
 };

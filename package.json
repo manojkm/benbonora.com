@@ -4,11 +4,13 @@
   "homepage": "http://www.benbonora.com",
   "description": "Ben Bonora's personal site.",
   "main": "Gruntfile.js",
+  "repository": "https://github.com/bbonora/benbonora.com",
   "dependencies": {},
   "devDependencies": {
     "assemble": "^0.9.0",
     "bower": "^1.7.1",
     "grunt": "^0.4.5",
+    "grunt-assemble": "^0.4.0",
     "grunt-autoprefixer": "^3.0.3",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.7.0",
@@ -29,6 +31,7 @@
     "load-grunt-config": "^0.19.1",
     "load-grunt-tasks": "^3.4.0",
     "node-sass": "^3.4.2",
+    "serve-static": "^1.10.2",
     "time-grunt": "^1.3.0",
     "underscore": "^1.8.3"
   },
